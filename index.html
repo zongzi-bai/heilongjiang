@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>北国龙江 · 黑龙江文旅门户</title>
+  <meta name="description" content="黑龙江 13 城文旅全景：点击地图探索城市历史、特色与推荐路线，AI 旅行助手为你匹配最合适的目的地。" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- 悬浮 AI 对话球 -->
+  <button class="chat-dock" id="chatDock" aria-label="打开 AI 旅行助手">AI</button>
+  <div class="chat-window" id="chatWindow" role="dialog" aria-label="AI 旅行助手对话窗">
+    <div class="chat-win-head">
+      <b>龙江旅行助手</b>
+      <button class="chat-win-close" aria-label="关闭">×</button>
+    </div>
+    <div class="chat-win-body"></div>
+    <div class="chat-win-input">
+      <input type="text" placeholder="输入你的旅行偏好…" aria-label="输入旅行偏好" />
+      <button class="btn btn-primary" id="dockSend">发送</button>
+    </div>
+  </div>
+
+  <script src="data/cities.js"></script>
+  <script src="data/map-geo.js"></script>
+  <script src="data/city-scenes.js"></script>
+  <script src="data/city-impressions.js"></script>
+  <script src="data/travel-routes.js"></script>
+  <script src="js/recommender.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/travel-map.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
